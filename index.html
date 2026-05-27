@@ -25,7 +25,7 @@ nav{background:var(--navy);color:#fff;padding:0 1.25rem;display:flex;align-items
 
 /* LOGO */
 .logo-wrap{display:flex;flex-direction:column;align-items:center;margin-bottom:1.25rem;position:relative}
-.logo-circle{width:115px;height:115px;background:linear-gradient(135deg,#fff,#f0e6c8);border-radius:50%;border:3px solid var(--gold);display:flex;align-items:center;justify-content:center;box-shadow:0 0 30px rgba(212,160,23,.4),0 4px 20px rgba(0,0,0,.4);margin-bottom:.75rem}
+.logo-circle{width:115px;height:115px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 0 30px rgba(212,160,23,.5),0 4px 20px rgba(0,0,0,.4);margin-bottom:.75rem;background:transparent}
 .logo-title{font-size:1.65rem;font-weight:800;letter-spacing:.5px;background:linear-gradient(135deg,#fff,var(--gold2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .logo-sub{font-size:.78rem;color:rgba(255,255,255,.7);margin-top:.2rem}
 .slogan{background:rgba(212,160,23,.15);border:1px solid rgba(212,160,23,.5);border-radius:999px;padding:.4rem 1.25rem;font-size:.82rem;font-style:italic;display:inline-block;margin-top:.75rem;color:var(--gold2)}
@@ -144,25 +144,7 @@ footer strong{color:var(--gold);font-size:.9rem}
 <div class="hero">
   <div class="logo-wrap">
     <div class="logo-circle">
-      <!-- SVG logo: 2 elephants + caduceus -->
-      <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- Left elephant -->
-        <ellipse cx="18" cy="52" rx="11" ry="9" fill="#b91c1c"/>
-        <ellipse cx="18" cy="40" rx="8" ry="8" fill="#b91c1c"/>
-        <path d="M10 48 Q6 56 9 60 Q12 64 14 58" stroke="#b91c1c" stroke-width="3" fill="none" stroke-linecap="round"/>
-        <circle cx="21" cy="37" r="2" fill="#fff"/>
-        <!-- Right elephant (mirrored) -->
-        <ellipse cx="62" cy="52" rx="11" ry="9" fill="#b91c1c"/>
-        <ellipse cx="62" cy="40" rx="8" ry="8" fill="#b91c1c"/>
-        <path d="M70 48 Q74 56 71 60 Q68 64 66 58" stroke="#b91c1c" stroke-width="3" fill="none" stroke-linecap="round"/>
-        <circle cx="59" cy="37" r="2" fill="#fff"/>
-        <!-- Caduceus staff -->
-        <line x1="40" y1="18" x2="40" y2="62" stroke="#b91c1c" stroke-width="3"/>
-        <path d="M33 28 Q28 34 33 38 Q40 42 47 38 Q52 34 47 28 Q40 22 33 28" stroke="#b91c1c" stroke-width="2" fill="none"/>
-        <!-- Cross on top -->
-        <rect x="37" y="12" width="6" height="14" rx="2" fill="#b91c1c"/>
-        <rect x="33" y="16" width="14" height="6" rx="2" fill="#b91c1c"/>
-      </svg>
+      <img src="logo.png" alt="Kerala Pharmacy Logo" style="width:108px;height:108px;border-radius:50%;object-fit:cover;"/>
     </div>
     <div class="logo-title">Kerala Pharmacy</div>
     <div class="logo-sub">Gandhi Nagar, Kodakara, Thrissur</div>
