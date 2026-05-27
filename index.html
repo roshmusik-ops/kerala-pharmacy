@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="theme-color" content="#b91c1c"/>
+<title>Kerala Pharmacy — Gandhi Nagar, Kodakara, Thrissur</title>
+<meta name="description" content="Kerala Pharmacy, Gandhi Nagar, Kodakara, Thrissur. Brand medicines 13% discount. Generic medicines up to 80% off. Call 8086732560."/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:#fff8f0;color:#1e293b}
+a{text-decoration:none;color:inherit}
+
+/* NAV */
+nav{background:#b91c1c;color:#fff;padding:0 1.25rem;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.nav-brand{font-weight:700;font-size:1rem;line-height:1.2}
+.nav-brand span{display:block;font-size:.68rem;font-weight:400;opacity:.85}
+.nav-cta{background:#fff;color:#b91c1c;font-weight:700;font-size:.8rem;padding:.45rem 1rem;border-radius:999px}
+
+/* HERO */
+.hero{background:linear-gradient(160deg,#7f1d1d 0%,#b91c1c 50%,#dc2626 100%);color:#fff;text-align:center;padding:2.5rem 1.25rem 2rem}
+
+/* LOGO */
+.logo-wrap{display:flex;flex-direction:column;align-items:center;margin-bottom:1.25rem}
+.logo-circle{width:110px;height:110px;background:#fff;border-radius:50%;border:4px solid rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.3);margin-bottom:.75rem}
+.logo-title{font-size:1.6rem;font-weight:800;letter-spacing:.5px}
+.logo-sub{font-size:.78rem;opacity:.85;margin-top:.2rem}
+.slogan{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:.4rem 1.25rem;font-size:.82rem;font-style:italic;display:inline-block;margin-top:.75rem}
+
+.hero-desc{font-size:.95rem;opacity:.9;max-width:420px;margin:.75rem auto 1.5rem;line-height:1.6}
+.hero-btns{display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap}
+.btn-white{background:#fff;color:#b91c1c;font-weight:700;padding:.7rem 1.5rem;border-radius:999px;font-size:.92rem}
+.btn-outline{border:2px solid rgba(255,255,255,.7);color:#fff;font-weight:600;padding:.7rem 1.4rem;border-radius:999px;font-size:.9rem}
+
+/* DISCOUNT BANNER */
+.disc-banner{display:flex;background:#fff;border-bottom:2px solid #fee2e2}
+.disc-item{flex:1;text-align:center;padding:1.1rem .5rem;border-right:1px solid #fee2e2}
+.disc-item:last-child{border-right:none}
+.disc-num{font-size:1.6rem;font-weight:800;color:#b91c1c}
+.disc-label{font-size:.7rem;color:#64748b;margin-top:.2rem;line-height:1.3}
+
+/* SECTION */
+section{padding:2rem 1.25rem;max-width:680px;margin:0 auto}
+h2{font-size:1.25rem;font-weight:700;margin-bottom:1rem;color:#7f1d1d}
+
+/* COMPARISON */
+.compare-box{background:#fff;border-radius:18px;border:2px solid #fecaca;overflow:hidden;box-shadow:0 2px 12px rgba(185,28,28,.08)}
+.compare-head{background:#b91c1c;color:#fff;text-align:center;padding:.6rem;font-weight:700;font-size:.85rem}
+.compare-med{font-size:.9rem;font-weight:600;text-align:center;padding:.75rem;background:#fff7f7;color:#7f1d1d;border-bottom:1px solid #fecaca}
+.compare-row{display:flex;align-items:stretch}
+.compare-col{flex:1;padding:1rem .75rem;text-align:center}
+.compare-col.other{background:#fef2f2;border-right:2px solid #fecaca}
+.compare-col.ours{background:#f0fdf4}
+.col-title{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:.5rem;opacity:.7}
+.col-price{font-size:1.8rem;font-weight:800;line-height:1}
+.col-price.red{color:#dc2626}
+.col-price.green{color:#16a34a}
+.col-unit{font-size:.72rem;margin-top:.3rem;opacity:.7}
+.col-save{background:#dcfce7;color:#15803d;font-size:.75rem;font-weight:700;padding:.25rem .75rem;border-radius:999px;display:inline-block;margin-top:.4rem}
+.vs-badge{background:#b91c1c;color:#fff;font-weight:800;font-size:.75rem;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:auto;flex-shrink:0;align-self:center}
+.saving-highlight{background:linear-gradient(135deg,#dcfce7,#bbf7d0);border:2px solid #86efac;border-radius:12px;padding:.75rem;text-align:center;margin-top:.75rem}
+.saving-highlight strong{color:#15803d;font-size:1rem}
+.saving-highlight span{display:block;font-size:.75rem;color:#166534;margin-top:.2rem}
+
+/* MEDICINES GRID */
+.med-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem}
+.med-card{background:#fff;border-radius:14px;padding:.9rem;border:1px solid #fecaca;text-align:center}
+.med-icon{font-size:1.6rem;margin-bottom:.3rem}
+.med-name{font-weight:600;font-size:.85rem;color:#7f1d1d}
+.med-disc{font-size:.72rem;color:#16a34a;margin-top:.2rem;font-weight:600}
+.med-brand{font-size:.68rem;color:#94a3b8;margin-top:.1rem}
+
+/* OFFERS */
+.offer-cards{display:flex;flex-direction:column;gap:.75rem}
+.offer-card{border-radius:14px;padding:1rem 1.1rem;display:flex;align-items:center;gap:.9rem}
+.offer-card.brand{background:linear-gradient(135deg,#fff7ed,#fed7aa);border:1.5px solid #fb923c}
+.offer-card.generic{background:linear-gradient(135deg,#f0fdf4,#bbf7d0);border:1.5px solid #4ade80}
+.offer-icon{font-size:2rem;flex-shrink:0}
+.offer-title{font-weight:700;font-size:.95rem}
+.offer-desc{font-size:.78rem;color:#475569;margin-top:.2rem}
+.offer-badge{display:inline-block;font-weight:800;font-size:1rem;margin-top:.3rem}
+.offer-badge.orange{color:#ea580c}
+.offer-badge.green{color:#16a34a}
+
+/* WHY */
+.why-list{display:flex;flex-direction:column;gap:.7rem}
+.why-item{display:flex;gap:.75rem;align-items:flex-start;background:#fff;border-radius:12px;padding:.9rem 1rem;border:1px solid #fecaca}
+.why-icon{font-size:1.4rem;flex-shrink:0}
+.why-text strong{display:block;font-size:.87rem;color:#7f1d1d}
+.why-text span{font-size:.77rem;color:#64748b}
+
+/* CONTACT */
+.contact-cards{display:flex;flex-direction:column;gap:.75rem}
+.contact-card{background:#fff;border-radius:14px;padding:1rem 1.1rem;border:1px solid #fecaca;display:flex;align-items:center;gap:.75rem}
+.contact-icon{font-size:1.4rem}
+.contact-text strong{display:block;font-size:.8rem;color:#7f1d1d}
+.contact-text a{font-size:.9rem;font-weight:600;color:#b91c1c}
+
+/* FORM */
+.form-wrap{background:linear-gradient(135deg,#7f1d1d,#b91c1c);border-radius:20px;padding:1.75rem 1.25rem;color:#fff;text-align:center}
+.form-wrap h2{color:#fff;margin-bottom:.4rem}
+.form-wrap p{font-size:.85rem;opacity:.9;margin-bottom:1.1rem}
+.form-box{background:#fff;border-radius:14px;padding:1.25rem;text-align:left}
+.form-box input{width:100%;border:1.5px solid #fecaca;border-radius:10px;padding:.65rem .9rem;font-size:.9rem;margin-bottom:.75rem;font-family:inherit;color:#1e293b;outline:none}
+.form-box input:focus{border-color:#b91c1c}
+.form-box button{width:100%;background:#b91c1c;color:#fff;font-weight:700;font-size:.95rem;padding:.75rem;border:none;border-radius:10px;cursor:pointer}
+#formSuccess{display:none;background:#f0fdf4;border:1px solid #86efac;border-radius:10px;padding:.75rem;color:#15803d;font-size:.85rem;text-align:center;margin-top:.75rem}
+
+/* FOOTER */
+footer{background:#7f1d1d;color:#fecaca;text-align:center;padding:1.5rem 1.25rem;font-size:.78rem;line-height:2}
+footer strong{color:#fff;font-size:.9rem}
+
+/* WA FLOAT */
+.wa-float{position:fixed;bottom:1.25rem;right:1.25rem;z-index:99;background:#25d366;color:#fff;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.7rem;box-shadow:0 4px 15px rgba(37,211,102,.45)}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">
+    🏥 Kerala Pharmacy
+    <span>Gandhi Nagar, Kodakara, Thrissur</span>
+  </div>
+  <a href="tel:+918086732560" class="nav-cta">📞 Call</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="logo-wrap">
+    <div class="logo-circle">
+      <!-- SVG logo: 2 elephants + caduceus -->
+      <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Left elephant -->
+        <ellipse cx="18" cy="52" rx="11" ry="9" fill="#b91c1c"/>
+        <ellipse cx="18" cy="40" rx="8" ry="8" fill="#b91c1c"/>
+        <path d="M10 48 Q6 56 9 60 Q12 64 14 58" stroke="#b91c1c" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <circle cx="21" cy="37" r="2" fill="#fff"/>
+        <!-- Right elephant (mirrored) -->
+        <ellipse cx="62" cy="52" rx="11" ry="9" fill="#b91c1c"/>
+        <ellipse cx="62" cy="40" rx="8" ry="8" fill="#b91c1c"/>
+        <path d="M70 48 Q74 56 71 60 Q68 64 66 58" stroke="#b91c1c" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <circle cx="59" cy="37" r="2" fill="#fff"/>
+        <!-- Caduceus staff -->
+        <line x1="40" y1="18" x2="40" y2="62" stroke="#b91c1c" stroke-width="3"/>
+        <path d="M33 28 Q28 34 33 38 Q40 42 47 38 Q52 34 47 28 Q40 22 33 28" stroke="#b91c1c" stroke-width="2" fill="none"/>
+        <!-- Cross on top -->
+        <rect x="37" y="12" width="6" height="14" rx="2" fill="#b91c1c"/>
+        <rect x="33" y="16" width="14" height="6" rx="2" fill="#b91c1c"/>
+      </svg>
+    </div>
+    <div class="logo-title">Kerala Pharmacy</div>
+    <div class="logo-sub">Gandhi Nagar, Kodakara, Thrissur</div>
+    <div class="slogan">✨ Caring You Beyond Prescriptions</div>
+  </div>
+  <p class="hero-desc">Your trusted pharmacy for all branded medicines at 13% discount and high-quality generic medicines at up to 80% less price.</p>
+  <div class="hero-btns">
+    <a href="tel:+918086732560" class="btn-white">📞 80867 32560</a>
+    <a href="#offers" class="btn-outline">💊 See Offers</a>
+  </div>
+</div>
+
+<!-- DISCOUNT BANNER -->
+<div class="disc-banner">
+  <div class="disc-item"><div class="disc-num">13%</div><div class="disc-label">Off All Brand Medicines</div></div>
+  <div class="disc-item"><div class="disc-num">80%</div><div class="disc-label">Off Generic Medicines</div></div>
+  <div class="disc-item"><div class="disc-num">1000+</div><div class="disc-label">Medicines in Stock</div></div>
+  <div class="disc-item"><div class="disc-num">24/7</div><div class="disc-label">Customer Support</div></div>
+</div>
+
+<!-- PRICE COMPARISON -->
+<section>
+  <h2>💰 See How Much You Save</h2>
+  <div class="compare-box">
+    <div class="compare-head">Price Comparison — Real Example</div>
+    <div class="compare-med">💊 Amlodipine 5mg — 10 Tablets</div>
+    <div class="compare-row">
+      <div class="compare-col other">
+        <div class="col-title">Other Shops</div>
+        <div class="col-price red">₹26.66</div>
+        <div class="col-unit">for 10 tablets</div>
+      </div>
+      <div class="vs-badge">VS</div>
+      <div class="compare-col ours">
+        <div class="col-title">Kerala Pharmacy</div>
+        <div class="col-price green">₹6</div>
+        <div class="col-unit">for 10 tablets</div>
+        <div class="col-save">Save ₹20.66 (77%)</div>
+      </div>
+    </div>
+    <div class="saving-highlight">
+      <strong>🎉 You save ₹247 every month on just this one medicine!</strong>
+      <span>Same salt · Same quality · Government certified</span>
+    </div>
+  </div>
+</section>
+
+<!-- OFFERS -->
+<section id="offers">
+  <h2>🏷️ Our Offers</h2>
+  <div class="offer-cards">
+    <div class="offer-card brand">
+      <div class="offer-icon">🏪</div>
+      <div>
+        <div class="offer-title">All Branded Medicines</div>
+        <div class="offer-desc">Every branded medicine from all companies — flat discount every day</div>
+        <div class="offer-badge orange">13% DISCOUNT</div>
+      </div>
+    </div>
+    <div class="offer-card generic">
+      <div class="offer-icon">💊</div>
+      <div>
+        <div class="offer-title">Generic Medicines</div>
+        <div class="offer-desc">High quality government-certified generic medicines — same active ingredient</div>
+        <div class="offer-badge green">UP TO 80% OFF</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEDICINES WE STOCK -->
+<section>
+  <h2>💊 Medicines We Stock</h2>
+  <div class="med-grid">
+    <div class="med-card"><div class="med-icon">🩸</div><div class="med-name">Diabetes</div><div class="med-disc">Up to 80% off generic</div><div class="med-brand">13% off branded</div></div>
+    <div class="med-card"><div class="med-icon">❤️</div><div class="med-name">Blood Pressure</div><div class="med-disc">Up to 77% off generic</div><div class="med-brand">13% off branded</div></div>
+    <div class="med-card"><div class="med-icon">🦋</div><div class="med-name">Thyroid</div><div class="med-disc">Up to 70% off generic</div><div class="med-brand">13% off branded</div></div>
+    <div class="med-card"><div class="med-icon">🫁</div><div class="med-name">Asthma / Breathing</div><div class="med-disc">Up to 75% off generic</div><div class="med-brand">13% off branded</div></div>
+    <div class="med-card"><div class="med-icon">🦴</div><div class="med-name">Arthritis / Joints</div><div class="med-disc">Up to 80% off generic</div><div class="med-brand">13% off branded</div></div>
+    <div class="med-card"><div class="med-icon">🧠</div><div class="med-name">Neurological</div><div class="med-disc">Up to 78% off generic</div><div class="med-brand">13% off branded</div></div>
+    <div class="med-card"><div class="med-icon">🫀</div><div class="med-name">Cholesterol</div><div class="med-disc">Up to 82% off generic</div><div class="med-brand">13% off branded</div></div>
+    <div class="med-card"><div class="med-icon">👁️</div><div class="med-name">Eye / Ear Drops</div><div class="med-disc">Up to 70% off generic</div><div class="med-brand">13% off branded</div></div>
+    <div class="med-card"><div class="med-icon">🦷</div><div class="med-name">Dental / Pain</div><div class="med-disc">Up to 90% off generic</div><div class="med-brand">13% off branded</div></div>
+    <div class="med-card"><div class="med-icon">🧴</div><div class="med-name">Skin / Derma</div><div class="med-disc">Up to 75% off generic</div><div class="med-brand">13% off branded</div></div>
+    <div class="med-card"><div class="med-icon">🍼</div><div class="med-name">Paediatric</div><div class="med-disc">Up to 70% off generic</div><div class="med-brand">13% off branded</div></div>
+    <div class="med-card"><div class="med-icon">💊</div><div class="med-name">Vitamins & Supplements</div><div class="med-disc">Up to 85% off generic</div><div class="med-brand">13% off branded</div></div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section>
+  <h2>✅ Why Kerala Pharmacy?</h2>
+  <div class="why-list">
+    <div class="why-item"><div class="why-icon">💰</div><div class="why-text"><strong>Best Prices Guaranteed</strong><span>13% off every branded medicine + up to 80% off generics — every single day</span></div></div>
+    <div class="why-item"><div class="why-icon">✅</div><div class="why-text"><strong>High Quality Medicines</strong><span>All generics are government certified with same active ingredients as branded</span></div></div>
+    <div class="why-item"><div class="why-icon">👨‍⚕️</div><div class="why-text"><strong>Expert Pharmacist</strong><span>Qualified pharmacist to guide you on medicines and alternatives</span></div></div>
+    <div class="why-item"><div class="why-icon">📍</div><div class="why-text"><strong>Conveniently Located</strong><span>Gandhi Nagar, Kodakara, Thrissur — easy to reach</span></div></div>
+    <div class="why-item"><div class="why-icon">🤝</div><div class="why-text"><strong>Caring Beyond Prescriptions</strong><span>We care about your health and your savings — not just selling medicines</span></div></div>
+  </div>
+</section>
+
+<!-- REGISTER FORM -->
+<section id="register">
+  <div class="form-wrap">
+    <h2>📋 Get Medicine Price List Free</h2>
+    <p>Enter your name and WhatsApp number — we'll send you our price list.</p>
+    <div class="form-box">
+      <input type="text" id="fname" placeholder="Your name *"/>
+      <input type="tel" id="fphone" placeholder="WhatsApp number *" inputmode="numeric"/>
+      <button onclick="submitForm()">✅ Send me the price list</button>
+      <div id="formSuccess">✅ Thank you! We'll WhatsApp you shortly. 📞 80867 32560</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+  <h2>📞 Contact Us</h2>
+  <div class="contact-cards">
+    <div class="contact-card"><div class="contact-icon">📞</div><div class="contact-text"><strong>Call / WhatsApp</strong><a href="tel:+918086732560">+91 80867 32560</a></div></div>
+    <div class="contact-card"><div class="contact-icon">📍</div><div class="contact-text"><strong>Address</strong><a href="https://maps.google.com/?q=Gandhi+Nagar+Kodakara+Thrissur" target="_blank">Gandhi Nagar, Kodakara, Thrissur, Kerala</a></div></div>
+  </div>
+</section>
+
+<footer>
+  <strong>Kerala Pharmacy</strong><br/>
+  Gandhi Nagar, Kodakara, Thrissur, Kerala<br/>
+  ✨ Caring You Beyond Prescriptions<br/>
+  📞 80867 32560<br/><br/>
+  © 2026 Kerala Pharmacy
+</footer>
+
+<a class="wa-float" href="https://wa.me/918086732560?text=Hi%2C%20I%20want%20to%20know%20about%20medicine%20prices%20at%20Kerala%20Pharmacy%2C%20Kodakara" target="_blank">💬</a>
+
+<script>
+function submitForm(){
+  const name=document.getElementById('fname').value.trim();
+  const phone=document.getElementById('fphone').value.trim();
+  const digits=phone.replace(/\D/g,'');
+  if(!name){alert('Please enter your name.');return;}
+  if(digits.length<10){alert('Please enter a valid 10-digit number.');return;}
+  document.getElementById('formSuccess').style.display='block';
+  document.getElementById('fname').value='';
+  document.getElementById('fphone').value='';
+}
+</script>
+</body>
+</html>
